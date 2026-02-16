@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артеём Филичёнок</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="bg.jpg" class="photo" />
+    </div>
+    
+    <div class="block">
+        <h1>Артем Филичёнок</h1>
+        <p><a href="tel:+375447326329">+375 (44) 732-63-29</a></p>
+        <div class="contact">
+            <a href="https://t.me/artem_filichenok">
+                <img src="telegram.png" />
+            </a>
+            <a href="https://wa.me/+375447326329">
+                <img src="whatsapp.png" />
+            </a>
+            <a href="https://www.instagram.com/filichenok_artem?igsh=MTRmazFhZjUwOGZscw%3D%3D&utm_source=qrk">
+                <img src="insta.png" />
+            </a>
+        </div>
+
+        <p>бля ну напиши хоть что-то о себе</p>
+    </div>
+
+    <script>
+        const photo = document.querySelector('.photo');
+        
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxSpeed = scrolled * 0.3;
+            photo.style.transform = `translateX(-50%) translateY(-${parallaxSpeed}px)`;
+        });
+    </script>
+</body>
+
+</html>
