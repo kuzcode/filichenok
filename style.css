@@ -63,7 +63,7 @@ p {
 }
 
 a {
-    color: #ff6200;
+    color: #001e96;
     text-decoration: none;
 }
 
@@ -79,13 +79,29 @@ a {
     height: 30px;
 }
 
+.translate {
+    position: fixed;
+    background: #0000004c;
+    right: 8px;
+    top: 8px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    padding: 5px 10px;
+}
+
+.translate p {
+    color: #fff;
+    margin: 0;
+}
+
 @media screen and (max-width: 500px) {
     .photo {
         max-width: none;
     }
 
     .block {
-        margin-top: calc(133vw - 30px);
+        margin-top: calc(116vw - 30px);
         max-width: calc(100% - 24px);
     }
 
